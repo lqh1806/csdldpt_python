@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Đọc file và xử lý
-f = open("data/solo4.txt")
+f = open("data/solo10.txt")
 line = f.readline()
 ar_sc_input = line.split(" ")
 line = f.readline()
@@ -18,9 +18,6 @@ fileInputName = os.path.basename(f.name)
 f.close()
 
 knn_arr = np.empty(shape=[0,2])
-index = 0
-knn_min = 10000000000.0
-knn_name = "Hello"
 
 for path, dirs, files in os.walk("/Users/lequo/Desktop/CSDLDPT/csdldpt_python/data/"):
     for f in files:
