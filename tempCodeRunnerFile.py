@@ -1,0 +1,6 @@
+file = open("data/hoatau3_v2.txt", "a+")
+file.write(sc_string + "\n")
+file.write(sr_string + "\n")
+file.write(zr_string + "\n")
+file.write(rms_string)
+file.close()
