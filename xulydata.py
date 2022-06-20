@@ -11,7 +11,7 @@ def chuanHoa(arr):
     max_sc = max(arr)
     for index, x in enumerate(arr):
         arr[index] = arr[index]/max_sc
-    return arr;
+    return arr
 
 #hàm tính giá trị trung bình giá trị trích xuất
 
