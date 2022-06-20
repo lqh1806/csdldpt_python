@@ -54,7 +54,7 @@ rms_string += str(sum(arr_rms))
 
 
 # Ghi các đặc trưng ra file
-file = open("data/solo4_2.txt", "a+")
+file = open("input_data/solo4_2.txt", "a+")
 file.write(sc_string + "\n")
 file.write(sr_string + "\n")
 file.write(zr_string + "\n")

@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Đọc file và xử lý
-f = open("data/solo10.txt")
+f = open("input_data/solo10.txt")
 line = f.readline()
 ar_sc_input = line.split(" ")
 line = f.readline()
