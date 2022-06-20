@@ -49,5 +49,18 @@ for path, dirs, files in os.walk("/Users/lequo/Desktop/CSDLDPT/csdldpt_python/da
 list_knn = sorted(knn_arr.tolist(), key=lambda x: float(x[0]))
 
 # in ra 3 khoảng cách ngắn nhất
+dontau_cnt = 0
+songtau_cnt = 0
+hoatau_cnt = 0
+namee = list_knn[1][1]
 for i in range (1,4):
+    if("solo" in list_knn[i][1]): dontau_cnt += 1
+    if("duet" in list_knn[i][1]): songtau_cnt += 1
+    if("hoatau" in list_knn[i][1]): hoatau_cnt += 1
     print(list_knn[i])
+
+if(dontau_cnt == 1 and songtau_cnt == 1 and hoatau_cnt == 1):
+    print(namee)
+
+res = {dontau_cnt : "dontau", songtau_cnt : "songtau", hoatau_cnt : "hoatau"}
+print(res.get(max(res)))
