@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Đọc file và xử lý
-f = open("input_data/solo10.txt")
+f = open("input_data/input.txt")
 line = f.readline()
 ar_sc_input = line.split(" ")
 line = f.readline()
@@ -52,8 +52,8 @@ list_knn = sorted(knn_arr.tolist(), key=lambda x: float(x[0]))
 dontau_cnt = 0
 songtau_cnt = 0
 hoatau_cnt = 0
-namee = list_knn[1][1]
-for i in range (1,4):
+namee = list_knn[0][1]
+for i in range (0,3):
     if("solo" in list_knn[i][1]): dontau_cnt += 1
     if("duet" in list_knn[i][1]): songtau_cnt += 1
     if("hoatau" in list_knn[i][1]): hoatau_cnt += 1

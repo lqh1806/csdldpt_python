@@ -16,7 +16,7 @@ def chuanHoa(arr):
 #hàm tính giá trị trung bình giá trị trích xuất
 
 
-solo_file = "audio/solo4.wav"
+solo_file = "audio_test/duet_test1.wav"
 
 # Thực hiện việc trích rút đặc trưng
 solo, sr = librosa.load(solo_file) ##solo là mẫu audio, sr là tỉ lệ lấy mẫu (=22050)
@@ -54,7 +54,7 @@ rms_string += str(sum(arr_rms))
 
 
 # Ghi các đặc trưng ra file
-file = open("input_data/solo4_2.txt", "a+")
+file = open("input_data/input.txt", "a+")
 file.write(sc_string + "\n")
 file.write(sr_string + "\n")
 file.write(zr_string + "\n")
